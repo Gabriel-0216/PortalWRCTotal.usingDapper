@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model Infraestrutura.Post
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo ao Portal WRC.Total.com</h1>
+    <h4>O campeonato mundial de Rally é a categoria principal do Rally mundial</h4>
+    <h5>Pilotos e equipes lutam bravamente por décimos de segundo em estradas curtas de asfalto, cascalho solto e até neve</h5>
+
+    <main>
+        @await Html.PartialAsync("/Views/Post/_ReturnOne.cshtml", Model)
+    </main>
+
+    <table>
+        <tr>
+            <td>
+                <img src="~/videos/gifFiesta.gif" />
+            </td>
+            <td>
+                <img src="~/videos/gifI20.gif" />
+            </td>
+        </tr>
+    </table>
+
+
+
+</div>

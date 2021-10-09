@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Infraestrutura.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<table class="table table-hover">
+   
+    <tbody>
+@foreach (var item in Model) {
+            
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Assunto)
+
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.Raw(item.Texto)
+                </td>
+
+            </tr>
+
+}
+    </tbody>
+</table>
